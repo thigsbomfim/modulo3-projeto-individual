@@ -1,0 +1,27 @@
+{
+  "name": "projeto-individual-modulo-3",
+  "version": "1.0.0",
+  "description": "modulo3-projeto-individual",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Thiago Bomfim",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thigsbomfim/modulo3-projeto-individual.git"
+  },
+  "keywords": [
+    "Academia",
+    "Suplementos",
+    "Atividades",
+    "Nutrição"
+  ],
+  "bugs": {
+    "url": "https://github.com/thigsbomfim/modulo3-projeto-individual/issues"
+  },
+  "homepage": "https://github.com/thigsbomfim/modulo3-projeto-individual#readme",
+  "type": "module"
+}
