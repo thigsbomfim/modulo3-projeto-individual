@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares);
 server.use(router)
 
-server.use(jsonServer.rewriter('./routes.json'))
+server.use(jsonServer.rewriter('routes.json'))
 
 server.use((req, res,) => {
   if (req.method === 'POST') {
