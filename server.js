@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares);
 server.use(router)
 
-server.use(jsonServer.rewriter({
+server.use(router.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
   "/produtos/creatina": "/produtos?tipo_like=creatina",
   "/produtos/vitaminas": "/produtos?tipo_like=vitamina",
