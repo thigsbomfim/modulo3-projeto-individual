@@ -9,7 +9,7 @@ server.use(jsonServer.rewriter({
   "/produtos/creatina": "/produtos?tipo_like=creatina",
   "/produtos/vitaminas": "/produtos?tipo_like=vitamina",
   "/produtos/pre-treino": "/produtos?tipo_like=pre-treino",
-  "/produtos/acessorios": "/produtos?tipo_like=acessorios",
+  "/produtos/acessorios": "/produtos?tipo_like=acessorio",
   "/produtos/wheyprotein/Whey-Protein-Basic": "/produtos/1",
   "/produtos/wheyprotein/Whey-Protein-Concentrado": "/produtos/2",
   "/produtos/wheyprotein/Whey-Protein-Isolado": "/produtos/3",
