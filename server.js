@@ -4,7 +4,7 @@ const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares);
-server.use(jsonServer.rewriter('{
+server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
   "/produtos/creatina": "/produtos?tipo_like=creatina",
   "/produtos/vitaminas": "/produtos?tipo_like=vitamina",
@@ -30,7 +30,7 @@ server.use(jsonServer.rewriter('{
   "/produtos/acessorio/Coqueteleira-3-compartimentos-com-MixBall-600ml": "/produtos/18",
   "/produtos/acessorio/Galao-Preto-2-Litros": "/produtos/19",
   "/produtos/acessorio/Balanca-de-cozinha": "/produtos/20"
-}'))
+}))
 server.use(router)
 
 server.listen(3000, () => {
