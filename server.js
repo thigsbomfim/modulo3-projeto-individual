@@ -26,10 +26,10 @@ server.use(jsonServer.rewriter({
   "/produtos/pre-treino/Pre-Treino-Haze-Hardcore": "/produtos/14",
   "/produtos/pre-treino/Pre-treino-Insanity": "/produtos/15",
   "/produtos/pre-treino/Pre-treino-GFOCUS": "/produtos/16",
-  "/produtos/acessorio/Coqueteleira-600ml": "/produtos/17",
-  "/produtos/acessorio/Coqueteleira-3-compartimentos-com-MixBall-600ml": "/produtos/18",
-  "/produtos/acessorio/Galao-Preto-2-Litros": "/produtos/19",
-  "/produtos/acessorio/Balanca-de-cozinha": "/produtos/20"
+  "/produtos/acessorios/Coqueteleira-600ml": "/produtos/17",
+  "/produtos/acessorios/Coqueteleira-3-compartimentos-com-MixBall-600ml": "/produtos/18",
+  "/produtos/acessorios/Galao-Preto-2-Litros": "/produtos/19",
+  "/produtos/acessorios/Balanca-de-cozinha": "/produtos/20"
 }))
 server.use(router)
 
