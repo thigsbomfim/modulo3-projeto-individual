@@ -4,7 +4,7 @@ const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares);
-server.use(jsonServer.rewriter('routes.json'))
+server.use(jsonServer.rewriter('./routes.json'))
 server.use(router)
 
 server.listen(3000, () => {
