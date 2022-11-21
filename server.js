@@ -2,7 +2,6 @@ import  jsonServer  from 'json-server'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-const routes = jsonServer.router('routes.json')
 
 server.use(middlewares);
 server.use(router)
@@ -19,4 +18,4 @@ server.listen(3000, () => {
 
 fetch('http://localhost:3000/')
   .then((res)=> res.json())
-  .then((resultado) => resultado.use(jsonServer.rewriter(routes)))
+  .then((resultado) => resultado.use(jsonServer.rewriter('./routes.json')))
