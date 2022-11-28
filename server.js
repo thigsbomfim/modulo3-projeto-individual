@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults()
 server.use((req, res, next)=>{
   res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5173/")
   res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE")
-  server.use(cors)
+  server.use(cors())
   next()
 })
 
@@ -40,7 +40,7 @@ server.use(jsonServer.rewriter({
   "/produtos/acessorio/Balanca-de-cozinha": "/produtos/20"
 }))
 server.use(router)
-
+server.use(cors())
 server.listen(3000, () => {
   console.log('JSON Server is running')
 })
