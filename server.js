@@ -1,5 +1,5 @@
 import  jsonServer  from 'json-server'
-const cors = require('cors')
+import cors from 'cors'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults()
 server.use((req, res, next)=>{
   res.header("Access-Control-Allow-Origin", "*")
   res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE")
-  server.use(cors())
+  server.use(cors)
   next()
 })
 
