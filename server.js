@@ -1,11 +1,13 @@
-import jsonServer from 'json-server'
-import cors from 'cors'
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+import { create, router as _router, defaults, rewriter } from "json-server";
+import cors from 'cors';
+
+const server = create();
+const router = _router("db.json");
+const middlewares = defaults();
 
 server.use(middlewares);
 server.use(cors())
+
 server.use((req, res, next)=> {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', ['GET','POST','PUT','DELETE']);
@@ -14,7 +16,7 @@ server.use((req, res, next)=> {
   next()
 })
 
-server.use(jsonServer.rewriter({
+server.use(rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
     "/produtos/creatina": "/produtos?tipo_like=creatina",
     "/produtos/vitaminas": "/produtos?tipo_like=vitamina",
@@ -41,8 +43,18 @@ server.use(jsonServer.rewriter({
     "/produtos/acessorio/Galao-Preto-2-Litros": "/produtos/19",
     "/produtos/acessorio/Balanca-de-cozinha": "/produtos/20"
   }))
+  
 server.use(router);
 
 server.listen(3200, ()=>{
   console.log('Servidor iniciado na porta http://localhost:3200')
 })
+
+
+
+
+
+
+
+
+
