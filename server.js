@@ -6,12 +6,12 @@ const middlewares = jsonServer.defaults();
 const cors = require('cors');
 server.use(middlewares);
 
-server.use(cors((req, res, next)=> {
-  res.header('Access-Control-Allow-Origin', '*'),
-  res.header('Access-Control-Allow-Methods', ['GET','POST','PUT','DELETE']),
-  res.header('Access-Control-Allow-Credentials', true)
+server.use((req, res, next)=> {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', '*');
   next()
-}))
+})
 
 server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
