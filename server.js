@@ -3,7 +3,6 @@ import cors from 'cors'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-const port = 5173
 server.use(middlewares)
 
 server.use(cors({
@@ -12,7 +11,6 @@ server.use(cors({
   credentials: true,
   allowedHeaders: ['X-CSRF-Token', 'X-Requested-With', 'Accept', 'Accept-Version', 'Content-Length', 'Content-MD5', 'Content-Type', 'Date', 'X-Api-Version', 'Authorization']
 }))
-
 server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
     "/produtos/creatina": "/produtos?tipo_like=creatina",
@@ -42,6 +40,6 @@ server.use(jsonServer.rewriter({
   }))
 server.use(router)
 
-server.listen(port, ()=>{
-  console.log('Servidor iniciado na porta http://localhost:5173')
+server.listen(3200, ()=>{
+  console.log('Servidor iniciado na porta http://localhost:3200')
 })
