@@ -1,11 +1,10 @@
 import jsonServer from 'json-server'
-import cors from 'cors'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json', noCors)
 const middlewares = jsonServer.defaults()
 server.use(middlewares)
 
-server.use(cors())
+
 server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
     "/produtos/creatina": "/produtos?tipo_like=creatina",
