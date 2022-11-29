@@ -5,7 +5,10 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const cors = require('cors');
 
-server.use(cors());
+server.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
 server.use(middlewares);
 server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
