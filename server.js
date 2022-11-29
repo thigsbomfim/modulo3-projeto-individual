@@ -1,9 +1,9 @@
 import jsonServer from "json-server";
 import cors from 'cors';
 
-const server = create();
-const router = _router("db.json");
-const middlewares = defaults();
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 server.use(cors())
@@ -16,7 +16,7 @@ server.use((req, res, next)=> {
   next()
 })
 
-server.use(rewriter({
+server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
     "/produtos/creatina": "/produtos?tipo_like=creatina",
     "/produtos/vitaminas": "/produtos?tipo_like=vitamina",
