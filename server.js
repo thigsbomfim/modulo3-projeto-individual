@@ -1,4 +1,4 @@
-import { create, router as _router, defaults, rewriter } from "json-server";
+import jsonServer from "json-server";
 import cors from 'cors';
 
 const server = create();
