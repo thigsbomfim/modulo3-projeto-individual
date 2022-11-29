@@ -4,12 +4,13 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const cors = require('cors');
-
-server.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
 server.use(middlewares);
+
+server.use(cors((req, res, next)=> {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  next()
+}))
+
 server.use(jsonServer.rewriter({
   "/produtos/wheyprotein": "/produtos?tipo_like=whey",
     "/produtos/creatina": "/produtos?tipo_like=creatina",
