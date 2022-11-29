@@ -1,6 +1,5 @@
 import jsonServer from 'json-server'
 import cors from 'cors'
-import express from 'express'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
