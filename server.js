@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(cors())
 server.use((req, res, next)=> {
-  res.setHeader('access-Control-Allow-Origin', '*')
+  res.setHeader('access-control-allow-origin', '*')
   next()
 })
 
