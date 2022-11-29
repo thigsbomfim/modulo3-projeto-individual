@@ -2,7 +2,7 @@ import jsonServer from 'json-server'
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-
+const port = 5173
 server.use(middlewares)
 server.use((req, res, next)=>{
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -40,6 +40,6 @@ server.use(jsonServer.rewriter({
   }))
 server.use(router)
 
-server.listen(3200, ()=>{
-  console.log('Servidor iniciado na porta http://localhost:3200')
+server.listen(port, ()=>{
+  console.log('Servidor iniciado na porta http://localhost:5173')
 })
