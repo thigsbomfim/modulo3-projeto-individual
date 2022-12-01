@@ -25,38 +25,38 @@
     {
       "id": 1,
       "nome": "Pedro Conceição da Silva",
-      "idade": 23,
+      "idade": "23 anos",
       "peso": "62kg",
       "altura": "1.76cm",
       "objetivo": "Ganhar Massa Muscular",
-      "planoId": 2
+      "nomePlano": "Padrão"
     },
     {
       "id": 2,
       "nome": "Bianca Oliveira Costa",
-      "idade": 34,
+      "idade": "34 anos",
       "peso": "75kg",
       "altura": "1.60cm",
       "objetivo": "Emagrecer",
-      "planoId": 1
+      "nomePlano": "Básico"
     },
     {
       "id": 3,
       "nome": "Patrick Matias de Lima",
-      "idade": 30,
+      "idade": "30 anos",
       "peso": "110kg",
       "altura": "1,80cm",
       "objetivo": "Emagrecer",
-      "planoId": 1
+      "nomePlano": "Básico"
     },
     {
       "id": 4,
       "nome": "Bruna Batista Dias",
-      "idade": 20,
+      "idade": "20 anos",
       "peso": "49kg",
       "altura": "1,57cm",
       "objetivo": "Ganhar Massa Muscular",
-      "planoId": 2
+      "nomePlano": "Padrão"
     }
   ],
   "franquias": [
