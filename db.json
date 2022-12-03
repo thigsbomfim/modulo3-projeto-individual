@@ -2,61 +2,91 @@
   "planos": [
     {
       "id": 1,
-      "tipo": "Basico",
-      "valor": "R$119,90",
+      "tipo": "Trimestral",
+      "valor": "R$149,90",
       "atividade": [
         "Musculação",
-        "Cross Fit"
+        "Cross Fit",
+        "Jump"
       ]
     },
     {
       "id": 2,
-      "tipo": "Padrao",
-      "valor": "R$129,90",
+      "tipo": "Semestral",
+      "valor": "R$169,90",
       "atividade": [
         "Musculação",
         "Cross Fit",
         "Fit Dance",
-        "Jiu-jitsu"
+        "Jiu-jitsu",
+        "Jump"
       ]
+    },
+    {
+      "id": 2,
+      "tipo": "Anual",
+      "valor": "R$199,90",
+      "atividade": [
+        "Musculação",
+        "Cross Fit",
+        "Fit Dance",
+        "Jiu-jitsu",
+        "Natação",
+        "Jump",
+        "Futebol de areia",
+        "Fut-volei"
+    ]
+
     }
   ],
   "clientes": [
     {
       "id": 1,
-      "nome": "Pedro Conceição da Silva",
+      "nome": "Pedro",
+      "sobrenome": "Conceição da Silva",
+      "email": "pedro_silva@gmail.com",
+      "senha": "12345678",
       "idade": "23 anos",
       "peso": "62kg",
       "altura": "1.76cm",
       "objetivo": "Ganhar Massa Muscular",
-      "nomePlano": "Padrão"
+      "nomePlano": "Trimestral"
     },
     {
       "id": 2,
-      "nome": "Bianca Oliveira Costa",
+      "nome": "Bianca",
+      "sobrenome": "Oliveira Costa",
+      "email": "bruna_batista@gmail.com",
+      "senha": "12345678",
       "idade": "34 anos",
       "peso": "75kg",
       "altura": "1.60cm",
       "objetivo": "Emagrecer",
-      "nomePlano": "Básico"
+      "nomePlano": "Semestral"
     },
     {
       "id": 3,
-      "nome": "Patrick Matias de Lima",
+      "nome": "Patrick",
+      "sobrenome": "Matias de Lima",
+      "senha": "12345678",
+      "email": "patrick_matias@gmail.com",
       "idade": "30 anos",
       "peso": "110kg",
       "altura": "1,80cm",
       "objetivo": "Emagrecer",
-      "nomePlano": "Básico"
+      "nomePlano": "Anual"
     },
     {
       "id": 4,
-      "nome": "Bruna Batista Dias",
+      "nome": "Bruna",
+      "sobrenome": "Batista Dias",
+      "email": "bruna_batista@gmail.com",
+      "senha": "12345678",
       "idade": "20 anos",
       "peso": "49kg",
       "altura": "1,57cm",
       "objetivo": "Ganhar Massa Muscular",
-      "nomePlano": "Padrão"
+      "nomePlano": "Anual"
     }
   ],
   "franquias": [
@@ -69,8 +99,8 @@
       "cidade": "Rio de Janeiro, RJ",
       "cep": "23045-830",
       "planos": [
-        "Basico",
-        "Padrao"
+        "Semestral",
+        "Anual"
       ]
     },
     {
@@ -81,8 +111,8 @@
       "cidade": "Rio de Janeiro, RJ",
       "cep": "23052-010",
       "planos": [
-        "Basico",
-        "Padrao"
+        "Trimestral",
+        "Semestral"
       ]
     },
     {
@@ -93,7 +123,7 @@
       "cidade": "Rio de Janeiro, RJ",
       "cep": "22790-851",
       "planos": [
-        "Padrao"
+        "Anual"
       ]
     },
     {
@@ -104,8 +134,8 @@
       "cidade": "Rio de Janeiro, RJ",
       "cep": "21820-005",
       "planos": [
-        "Basico",
-        "Padrao"
+        "Trimestral",
+        "Semestral"
       ]
     }
   ],
@@ -315,9 +345,35 @@
       "tipo": "Jiu-jitsu",
       "status": true,
       "horario": "Terca e Quinta - (2 horarios) 08:00 às 09:00 e 19:00 às 20:00"
+    },
+    {
+      "id": 5,
+      "tipo": "Natação",
+      "status": true,
+      "horario":"Terca e Quinta - (2 horarios) 07:00 às 08:00 e 18:00 às 17:00"
+    },
+    {
+      "id": 6,
+      "tipo": "Jump",
+      "status": true,
+      "horario": "Segunda, quarta e sexta - 17:30 às 18:30"
+    },
+    {
+      "id": 7,
+      "tipo": "Futebol de areia",
+      "status": true,
+      "horario":"Quarta e sexta - 20:30 às 21:30"
+    },
+    {
+      "id": 8,
+      "tipo": "Fut-volei",
+      "status": true,
+      "horario": "Terça e quinta - 19:00 às 20:00"
     }
+
   ],
   "empresa": {
-    "name": "Academia"
+    "name": "Iron Shape",
+    "type": "Academia"
   }
 }
