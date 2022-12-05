@@ -1,5 +1,5 @@
 {
-    "planos": [
+  "planos": [
       {
         "id": 1,
         "tipo": "Trimestral",
@@ -38,7 +38,7 @@
         ]
       }
     ],
-    "clientes": [
+  "clientes": [
       {
         "id": 1,
         "nome": "Pedro",
@@ -88,7 +88,7 @@
         "nomePlano": "Anual"
       }
     ],
-    "franquias": [
+  "franquias": [
       {
         "id": 1,
         "status": true,
@@ -138,7 +138,7 @@
         ]
       }
     ],
-    "produtos": [
+  "produtos": [
       {
         "id": 1,
         "tipo": "whey",
@@ -320,7 +320,7 @@
         "imagem": "https://www.gsuplementos.com.br/upload/growth-layout-personalizado/produto/1238/produto-balanca.png"
       }
     ],
-    "atividade": [
+  "atividade": [
       {
         "id": 1,
         "tipo": "Musculação",
@@ -370,8 +370,8 @@
         "horario": "Terça e quinta - 19:00 às 20:00"
       }
     ],
-    "empresa": {
+  "empresa": {
       "name": "Iron Shape",
       "type": "Academia"
     }
-  }
+}
